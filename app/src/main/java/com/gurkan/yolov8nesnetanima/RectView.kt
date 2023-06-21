@@ -26,7 +26,8 @@ class RectView(context: Context, attributeSet: AttributeSet) : View(context, att
 
 
     override fun onDraw(canvas: Canvas?) {
-        //sonuçları ekranda dikdörtgen şekilleri olarak çizerek ve her dikdörtgenin içinde nesnenin sınıfının etiketi ve doğruluk oranını yazarak sonuçları görselleştirir.        val scaleX = width / DataProcess.INPUT_SIZE.toFloat()
+        //sonuçları ekranda dikdörtgen şekilleri olarak çizerek ve her dikdörtgenin içinde nesnenin sınıfının etiketi ve doğruluk oranını yazarak sonuçları görselleştirir.
+        val scaleX = width / DataProcess.INPUT_SIZE.toFloat()
         val scaleY = scaleX * 9f / 16f
         val realY = width * 9f / 16f
         val diffY = realY - height
